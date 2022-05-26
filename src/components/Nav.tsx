@@ -6,21 +6,21 @@ import { CONSTANTS } from "constants/constants";
 export const Nav = () => {
   return (
     <section className="px-4 sm:px-6 md:px-8 pt-6">
-      <div className="flex items-center justify-between ">
+      <div className="flex sm:items-center justify-between ">
         <a href="/#">
           <span className="sr-only">ncmaz</span>
           <Logo />
         </a>
-        <div className="flex items-center text-sm">
+        <div className="flex items-center justify-end flex-wrap text-sm space-x-4 md:space-x-8 ml-2">
           <a
             href={CONSTANTS.documentationUrl}
-            className="block mr-8 font-medium hover:text-blue-500"
+            className="block  font-medium hover:text-blue-500"
           >
             Docs
           </a>
           <a
             href={CONSTANTS.supportUrl}
-            className="mr-8 block font-medium  hover:text-blue-500"
+            className=" block font-medium  hover:text-blue-500"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -28,7 +28,7 @@ export const Nav = () => {
           </a>
           <a
             href={CONSTANTS.liveDemoUrl}
-            className="mr-8 block font-medium  hover:text-blue-500"
+            className=" block font-medium  hover:text-blue-500"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -36,11 +36,8 @@ export const Nav = () => {
               Live Demo
             </abbr>
           </a>
-          <Button href={CONSTANTS.purchaseUrl}>
-            <span className="sm:hidden" title="Purchase now">
-              Purchase now
-            </span>
-            <span className="hidden sm:inline">Purchase template</span>
+          <Button className="text-sm my-2 " href={CONSTANTS.purchaseUrl}>
+            Purchase now
           </Button>
         </div>
       </div>

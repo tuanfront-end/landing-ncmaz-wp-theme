@@ -9,6 +9,7 @@ import singleVideoImg from "images/singleVideo.png";
 import singleAudioImg from "images/singleAudio.png";
 import singleGalleryImg from "images/singleGallery.png";
 import Badge from "./Badge";
+import { ArrowRightIcon } from "@heroicons/react/solid";
 
 export const SectionLayouts = () => {
   const data = [
@@ -16,58 +17,58 @@ export const SectionLayouts = () => {
       img: archiveImg,
       text: "Archive page",
       subText: "Category page",
-      link: "https://ncmaz.netlify.app/about",
+      link: "https://ncmaz.chisnghiax.com/category/mobile/",
     },
     {
       img: authorImg,
       text: "Author page",
       subText: "Author page",
-      link: "https://ncmaz.netlify.app/author/the-demo-author-slug",
+      link: "https://ncmaz.chisnghiax.com/author/jaren-nader/",
     },
     {
       img: searchImg,
       text: "Search page",
       subText: "Search page",
-      link: "https://ncmaz.netlify.app/archive/the-demo-archive-slug",
+      link: "https://ncmaz.chisnghiax.com/?s=Minima",
     },
     {
       img: singleAudioImg,
       text: "Single Audio",
       subText: "Single format Audio",
-      link: "https://ncmaz.netlify.app/archive/the-demo-archive-slug",
+      link: "https://ncmaz.chisnghiax.com/velit-at-dolorem-dignissimos/",
     },
     {
       img: submitPostImg,
       text: "Submission post page",
       subText: "Need login - (guest/guest)",
-      link: "https://ncmaz.netlify.app/archive/the-demo-archive-slug",
+      link: "https://ncmaz.chisnghiax.com/ncmaz-submission-post-editor/?action=create",
       tag: "HOT!",
     },
     {
       img: editAccountImg,
       text: "Edit Account page",
       subText: "Need login - (guest/guest)",
-      link: "https://ncmaz.netlify.app/archive/the-demo-archive-slug",
+      link: "https://ncmaz.chisnghiax.com/ncmaz-account/?tab=general",
       tag: "HOT!",
     },
     {
       img: single3Img,
       text: "Single style 3",
       subText: "Single pages",
-      link: "https://ncmaz.netlify.app/archive/the-demo-archive-slug",
+      link: "https://ncmaz.chisnghiax.com/sint-est-autem-quibusdam-asperiores-occaecati-voluptatem/",
     },
     {
       img: singleVideoImg,
       text: "Single Video",
       subText: "Single format Video",
-      link: "https://ncmaz.netlify.app/archive/the-demo-archive-slug",
+      link: "https://ncmaz.chisnghiax.com/aspernatur-deserunt-repudiandae-provident-assumenda-odit-voluptas/",
     },
 
     {
       img: singleGalleryImg,
       text: "Single Gallery",
       subText: "Single format Gallery",
-      link: "https://ncmaz.netlify.app/archive/the-demo-archive-slug",
+      link: "https://ncmaz.chisnghiax.com/hello-world/",
     },
   ];
 
@@ -86,26 +87,13 @@ export const SectionLayouts = () => {
             src={item.img}
             alt={item.text}
           />
-          <div className="absolute inset-0 flex items-center justify-center z-10 bg-opacity-0 group-hover:bg-opacity-50 transition-all text-slate-100 duration-200  bg-slate-900">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-12 w-12 opacity-0 group-hover:opacity-100 transition-opacity transform duration-200"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={1.5}
+          <div className="absolute inset-0 flex items-center justify-center z-10 bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-200 bg-slate-900">
+            <div
+              className="w-14 h-14 flex items-center justify-center bg-slate-900/70 text-slate-100 opacity-0 group-hover:opacity-100 transition-opacity transform duration-200 rounded-full"
+              title="View page"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-              />
-            </svg>
+              <ArrowRightIcon className="w-6 h-6 transform -rotate-45" />
+            </div>
           </div>
         </div>
         <div className="relative mt-1 p-3 text-center">
@@ -125,49 +113,43 @@ export const SectionLayouts = () => {
 
   return (
     <section className="mt-6">
-      <div className="px-4 max-w-screen-2xl mx-auto">
-        <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-center">
-          Template layouts 🧬
-        </h2>
-        <p className="mt-4 text-lg text-center text-gray-600 mx-auto">
-          Please login with demo account{" "}
-          <i>
-            <u>(guest/guest)</u>
-          </i>{" "}
-          to access all the amazing pages of the theme.
-        </p>
-        <div className="mt-4 flex items-center justify-center">
-          <Badge
-            name="username: guest ---- password: guest"
-            className="!text-sm !px-5 !py-2"
-            color="bg-sky-700"
-          >
-            Username: guest{" "}
-            <span className="mx-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M20 12H4"
-                />
-              </svg>
-            </span>{" "}
-            Password: guest
-          </Badge>
-        </div>
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-x-7 gap-y-11 mt-12">
-          {data.map(renderItem)}
-          <div className="shadow-2xl h-0 aspect-w-9 aspect-h-12 bg-slate-100 bg-opacity-60 rounded-xl ">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <h3 className="uppercase tracking-widest text-2xl">MORE ++</h3>
-            </div>
+      <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-center">
+        Template layouts 🧬
+      </h2>
+      <p className="mt-4 text-lg text-center text-gray-600 mx-auto">
+        Please login with demo account{" "}
+        <i className="text-orange-700">
+          <u>(guest/guest)</u>
+        </i>{" "}
+        to access all the amazing pages of the theme.
+      </p>
+      <div className="mt-4 flex items-center justify-center">
+        <Badge
+          name="username: guest ---- password: guest"
+          className="!text-sm !px-5 !py-2 "
+          color="bg-sky-700"
+        >
+          Username: guest{" "}
+          <span className="mx-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={1.5}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M20 12H4" />
+            </svg>
+          </span>{" "}
+          Password: guest
+        </Badge>
+      </div>
+      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-x-7 gap-y-11 mt-12">
+        {data.map(renderItem)}
+        <div className="shadow-2xl h-0 aspect-w-9 aspect-h-12 bg-slate-100 bg-opacity-60 rounded-xl ">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <h3 className="uppercase tracking-widest text-2xl">MORE ++</h3>
           </div>
         </div>
       </div>

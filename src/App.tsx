@@ -23,7 +23,7 @@ function App() {
 
       <div className="relative z-10">
         <Nav />
-        <div className="container">
+        <div className="container pb-20 pt-16">
           <Section1 />
         </div>
 

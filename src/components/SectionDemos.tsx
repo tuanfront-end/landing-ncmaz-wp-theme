@@ -8,6 +8,7 @@ import home5 from "images/home/5.png";
 import home6 from "images/home/6.png";
 import homeRTL from "images/home/rtl.png";
 import Badge from "./Badge";
+import { ArrowRightIcon } from "@heroicons/react/outline";
 
 export const SectionDemos = () => {
   const data = [
@@ -90,30 +91,17 @@ export const SectionDemos = () => {
             src={item.img}
             alt={item.text}
           />
-          <div className="absolute inset-0 flex items-center justify-center z-10 bg-opacity-[15%] group-hover:bg-opacity-50 transition-all text-slate-100 duration-200  bg-slate-900">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-12 w-12 opacity-0 group-hover:opacity-100 transition-opacity transform duration-200"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={1.5}
+          <div className="absolute inset-0 flex items-center justify-center z-10 bg-opacity-10 group-hover:bg-opacity-40 transition-all text-slate-100 duration-200 bg-slate-900">
+            <div
+              className="w-14 h-14 flex items-center justify-center bg-slate-900/70 text-slate-100 opacity-0 group-hover:opacity-100 transition-opacity transform duration-200 rounded-full"
+              title="View page"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-              />
-            </svg>
+              <ArrowRightIcon className="w-6 h-6 transform -rotate-45" />
+            </div>
           </div>
         </div>
         <div className="p-3 text-center">
-          <span className="block text-sm font-medium capitalize text-slate-100">
+          <span className="block text-base font-medium capitalize text-slate-100">
             {item.text}
           </span>
           <span className="block text-xs text-slate-400">{item.subText}</span>
@@ -126,9 +114,9 @@ export const SectionDemos = () => {
     <section className="dark text-slate-200">
       <Heading className="text-center text-slate-100">
         {" "}
-        7+ HOME PAGES 🎨
+        <i className="text-orange-500"> 7+</i> Home Pages
       </Heading>
-      <p className="mt-4 text-center text-slate-300 mx-auto max-w-screen-sm">
+      <p className="mt-4 text-lg text-center text-slate-300 mx-auto max-w-screen-md">
         Modern, Elegant & Beautiful home pages for your magazine. <br /> We plan
         to show new demos regularly 🍕
       </p>
