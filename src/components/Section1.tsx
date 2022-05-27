@@ -15,7 +15,7 @@ const Section1 = () => {
         <span className="block text-indigo-700">Blog, News & Magazine</span>
       </h1>
       <p className="block mt-7 text-lg text-slate-700 max-w-3xl mx-auto ">
-        Ncmaz Powerful functionality of a combination of WordPress, WpGraphql,
+        Ncmaz Powerful functionality of a combination of WordPress, Graphql,
         React & Tailwindcss. <br /> A perfect starting point for your next blog,
         news, magazine site.
       </p>
