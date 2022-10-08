@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { MoonIcon } from "@heroicons/react/solid";
-import { SunIcon } from "@heroicons/react/outline";
+import { MoonIcon } from "@heroicons/react/24/solid";
+import { SunIcon } from "@heroicons/react/24/outline";
 export interface SwitchDarkModeProps {
   className?: string;
 }

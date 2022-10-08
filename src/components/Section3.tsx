@@ -40,9 +40,12 @@ const Section3 = () => {
               Don't just take our word for it, read from our extensive <br />{" "}
               list of case studies and customer testimonials.
             </p>
+
             <a
               href={CONSTANTS.purchaseUrl}
-              className="flex items-center justify-center px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-700 border border-transparent shadow hover:bg-blue-600 focus:outline-none focus:border-blue-800 focus:shadow-blue-NaN md:py-4 md:text-lg md:px-10 rounded-full"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-6 py-3 text-base font-medium leading-none text-white transition duration-150 ease-in-out bg-blue-700 border border-transparent shadow hover:bg-blue-600 focus:outline-none focus:border-blue-800 md:py-4 md:text-lg md:px-10 rounded-full"
             >
               Purchase now
             </a>

@@ -9,7 +9,7 @@ import singleVideoImg from "images/singleVideo.png";
 import singleAudioImg from "images/singleAudio.png";
 import singleGalleryImg from "images/singleGallery.png";
 import Badge from "./Badge";
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 export const SectionLayouts = () => {
   const data = [
@@ -98,7 +98,7 @@ export const SectionLayouts = () => {
         </div>
         <div className="relative mt-1 p-3 text-center">
           <div className="inline-flex items-center space-x-2">
-            <span className="block text-base font-medium capitalize text-slate-900">
+            <span className="block text-base font-medium capitalize text-slate-900 group-hover:text-sky-400">
               {item.text}
             </span>
             {item.tag && <Badge name={item.tag} color="bg-red-700" />}

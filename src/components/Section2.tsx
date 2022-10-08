@@ -1,18 +1,18 @@
 import React from "react";
 import Heading from "./Heading";
 import {
-  ChipIcon,
+  CpuChipIcon as ChipIcon,
   CubeIcon,
   MoonIcon,
-  CodeIcon,
-  SupportIcon,
-  DatabaseIcon,
-  MusicNoteIcon,
+  CodeBracketIcon as CodeIcon,
+  LifebuoyIcon as SupportIcon,
+  CircleStackIcon as DatabaseIcon,
+  MusicalNoteIcon as MusicNoteIcon,
   VideoCameraIcon,
-  PhotographIcon,
+  PhotoIcon as PhotographIcon,
   PlusCircleIcon,
-  UserAddIcon,
-} from "@heroicons/react/solid";
+  UserPlusIcon as UserAddIcon,
+} from "@heroicons/react/24/solid";
 import Badge from "./Badge";
 
 const data = [

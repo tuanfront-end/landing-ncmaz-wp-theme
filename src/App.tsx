@@ -26,10 +26,14 @@ function App() {
         <div className="container pb-20 pt-16">
           <Section1 />
         </div>
-
-        <div id="demos" className="py-20 bg-slate-900/90 container rounded-3xl">
-          <SectionDemos />
+        <hr />
+        <div id="demos" className="bg-slate-9f00">
+          <div className="py-20 container">
+            <SectionDemos />
+          </div>
         </div>
+        <hr />
+
         <div id="layouts" className="py-20 container !px-4 rounded-3xl">
           <SectionLayouts />
         </div>

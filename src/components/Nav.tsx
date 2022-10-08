@@ -7,7 +7,7 @@ export const Nav = () => {
   return (
     <section className="px-4 sm:px-6 md:px-8 pt-6">
       <div className="flex sm:items-center justify-between ">
-        <a href="/#">
+        <a href="#home">
           <span className="sr-only">ncmaz</span>
           <Logo />
         </a>
